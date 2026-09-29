@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tramiel Information Tech Services | Computer Repair & IT Support</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f6ff',
+                            100: '#e0effe',
+                            500: '#2563eb',
+                            600: '#1d4ed8',
+                            700: '#1e40af',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+                    <i class="fa-solid fa-microchip text-lg"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-gray-900 block leading-tight">Tramiel</span>
+                    <span class="text-xs font-medium text-brand-600 uppercase tracking-wider">IT Services</span>
+                </div>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                <a href="#services" class="hover:text-brand-600 transition-colors">Services</a>
+                <a href="#products" class="hover:text-brand-600 transition-colors">Computers & Sales</a>
+                <a href="#about" class="hover:text-brand-600 transition-colors">About</a>
+                <a href="#contact" class="hover:text-brand-600 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Action CTA -->
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="tel:6622993616" class="text-sm font-semibold text-gray-700 flex items-center space-x-2 hover:text-brand-600 transition-colors">
+                    <i class="fa-solid fa-phone text-brand-600"></i>
+                    <span>+1 662-299-3616</span>
+                </a>
+                <a href="#contact" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-5 py-2.5 rounded-xl shadow-lg shadow-brand-600/20 transition-all text-sm">
+                    Request IT Service
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-6 space-y-3">
+            <a href="#services" class="block py-2 text-gray-600 font-medium hover:text-brand-600">Services</a>
+            <a href="#products" class="block py-2 text-gray-600 font-medium hover:text-brand-600">Computers & Sales</a>
+            <a href="#about" class="block py-2 text-gray-600 font-medium hover:text-brand-600">About</a>
+            <a href="#contact" class="block py-2 text-gray-600 font-medium hover:text-brand-600">Contact</a>
+            <div class="pt-2 flex flex-col space-y-3">
+                <a href="tel:6622993616" class="text-sm font-semibold text-gray-700 flex items-center space-x-2">
+                    <i class="fa-solid fa-phone text-brand-600"></i>
+                    <span>+1 662-299-3616</span>
+                </a>
+                <a href="#contact" class="bg-brand-600 text-white text-center font-medium py-3 rounded-xl shadow-md">
+                    Request IT Service
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-brand-50/50 via-white to-white py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-left">
+                    <div class="inline-flex items-center space-x-2 bg-brand-50 border border-brand-100 px-3.5 py-1.5 rounded-full text-brand-700 text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Greenwood, MS Technology Experts</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1]">
+                        Reliable Computer Repair, IT Support & Technology Solutions
+                    </h1>
+                    <p class="text-lg text-gray-600 leading-relaxed max-w-xl">
+                        Keeping Your Technology Working. Helping Your Business Stay Connected. Whether your computer needs repair, an upgrade, or your home or business needs a reliable network setup, Tramiel Information Tech Services provides practical technology solutions tailored to your needs.
+                    </p>
+                    <p class="text-sm text-gray-500 font-medium">
+                        We help individuals, small businesses, schools, and organizations keep their technology running smoothly — from computer repairs and upgrades to networking and technology consulting.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="#contact" class="inline-flex justify-center items-center bg-brand-600 hover:bg-brand-700 text-white font-semibold px-8 py-4 rounded-xl shadow-xl shadow-brand-600/25 transition-all text-base">
+                            Request IT Service
+                            <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="#products" class="inline-flex justify-center items-center bg-white hover:bg-gray-50 text-gray-800 font-semibold px-8 py-4 rounded-xl border border-gray-200 shadow-sm transition-all text-base">
+                            Shop Computers & Equipment
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" alt="Computer Repair and IT Support technician working" class="w-full h-[420px] sm:h-[480px] object-cover" onerror="this.src='https://placehold.co/600x450/f1f5f9/1e293b?text=IT+Support'">
+                    </div>
+                    <!-- Floating trust card -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl border border-gray-100 hidden sm:flex items-center space-x-4 max-w-xs">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fa-solid fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 font-medium">Trusted Local Service</p>
+                            <p class="text-sm font-bold text-gray-800">Fast Diagnostics & Repair</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-gray-50/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider block mb-2">Computer Repair & IT Services</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Technology Problems? We Can Help.</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Your computer should work for you — not slow you down. We provide dependable computer repair and technology services designed to get you back up and running.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Computer Repair</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Troubleshooting, diagnostics, system issues, software problems, and general computer repairs handled with care.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Computer Upgrades</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Improve the performance and lifespan of your computer with memory, storage, hardware, and other essential upgrades.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Networking</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Home and business network setup, configuration, troubleshooting, and reliable connectivity solutions.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">IT Consulting</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Need help deciding what technology your business needs? We can help you plan, configure, and implement practical IT solutions.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow group md:col-span-2 lg:col-span-2">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between h-full">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Technology Setup & Support</h3>
+                            <p class="text-gray-600 leading-relaxed text-sm max-w-md">
+                                From setting up new computers and devices to configuring your technology environment, we can help make the process easier.
+                            </p>
+                        </div>
+                        <div class="mt-6 sm:mt-0">
+                            <a href="#contact" class="inline-flex items-center space-x-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
+                                <span>Get IT Help</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products & Sales Section -->
+    <section id="products" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider block mb-2">Computers & Technology for Sale</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Get the Right Computer for Your Needs</h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Looking for a new computer instead of repairing an old one? We can help you find the right technology for your needs and budget.
+                    </p>
+                    <p class="mt-2 text-sm text-gray-500">
+                        Browse available computers, laptops, accessories, networking equipment, and other technology products — with options for personal, educational, and business use.
+                    </p>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-xl border border-gray-100 bg-gray-50">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80" alt="Laptops and computers display" class="w-full h-[320px] object-cover" onerror="this.src='https://placehold.co/600x350/f1f5f9/1e293b?text=Computers+For+Sale'">
+                </div>
+            </div>
+
+            <!-- Available Categories -->
+            <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Available Products</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-white text-brand-600 shadow-sm flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1">Desktop Computers</h4>
+                        <p class="text-sm text-gray-600">Reliable systems for home, office, education, and everyday computing.</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-white text-brand-600 shadow-sm flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1">Laptops</h4>
+                        <p class="text-sm text-gray-600">Portable computers for work, school, business, and personal use.</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-white text-brand-600 shadow-sm flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-memory"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1">Computer Components & Upgrades</h4>
+                        <p class="text-sm text-gray-600">Memory, storage, accessories, and other components to improve your system.</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-white text-brand-600 shadow-sm flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-router"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1">Networking Equipment</h4>
+                        <p class="text-sm text-gray-600">Technology and equipment for building and improving your home or business network.</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex items-start space-x-4 sm:col-span-2 lg:col-span-2">
+                    <div class="w-12 h-12 rounded-xl bg-white text-brand-600 shadow-sm flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-headphones"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1">Accessories & Peripherals</h4>
+                        <p class="text-sm text-gray-600">Keyboards, mice, monitors, cables, storage devices, and other essential equipment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA banner -->
+            <div class="mt-12 bg-brand-50 border border-brand-100 rounded-3xl p-8 flex flex-col sm:flex-row items-center justify-between">
+                <div class="mb-4 sm:mb-0 text-center sm:text-left">
+                    <h4 class="text-lg font-bold text-gray-900">Need help choosing?</h4>
+                    <p class="text-sm text-gray-600">Contact us and we'll help you find the right setup.</p>
+                </div>
+                <a href="#contact" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-6 py-3 rounded-xl shadow-md text-sm transition-all">
+                    View Computers & Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Why Choose Us -->
+    <section id="about" class="py-24 bg-gray-50/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider block mb-2">Technology Solutions for Home & Business</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">One Local Resource for Your Technology Needs</h2>
+                    <p class="mt-4 text-lg text-gray-600 leading-relaxed">
+                        Technology doesn't have to be complicated. Whether you're a homeowner who needs a computer repaired, a student who needs a reliable laptop, or a business that needs computers and networking configured, Tramiel Information Tech Services can help.
+                    </p>
+                    <div class="mt-6 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                        <p class="text-base font-bold text-brand-600 uppercase tracking-wide">Repair it. Upgrade it. Replace it. Connect it.</p>
+                        <p class="mt-2 text-sm text-gray-600">
+                            We take the time to understand what you need and provide solutions that make sense for your situation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="text-left mb-6">
+                        <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider block mb-1">Why Choose Tramiel Information Tech Services?</span>
+                        <h3 class="text-2xl font-bold text-gray-900">Practical IT Support. Personal Service.</h3>
+                    </div>
+
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            <i class="fa-solid fa-user-gear"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-1">Experienced Technology Support</h4>
+                            <p class="text-sm text-gray-600">Get knowledgeable assistance with computers, hardware, software, and networking.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-1">Solutions Built Around Your Needs</h4>
+                            <p class="text-sm text-gray-600">We don't believe every customer needs the same technology. We help identify the right solution for your situation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            <i class="fa-solid fa-shop"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-1">Repair & Sales Under One Roof</h4>
+                            <p class="text-sm text-gray-600">When repair isn't the best option, we can also help you find a replacement computer or technology solution.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-1">Support for Individuals & Businesses</h4>
+                            <p class="text-sm text-gray-600">From everyday computer problems to business networking needs, we're here to help.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Repair vs Replacement Callout -->
+    <section class="py-20 bg-brand-600 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <span class="bg-brand-700/80 text-brand-100 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider inline-block">
+                Expert Consultation
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Need a Computer Repaired or Replaced?</h2>
+            <h3 class="text-xl font-medium text-brand-100">Let's Find the Right Solution.</h3>
+            <p class="text-brand-100 max-w-2xl mx-auto text-base leading-relaxed">
+                Not sure whether you should repair your current computer, upgrade it, or replace it? Let us take a look. We'll help you understand your options and find a practical solution — whether that means repairing your existing system or choosing a new computer.
+            </p>
+            <div class="pt-4">
+                <a href="#contact" class="bg-white text-brand-700 hover:bg-gray-100 font-semibold px-8 py-4 rounded-xl shadow-lg transition-all text-base inline-block">
+                    Contact Us Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Info & Location -->
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider block mb-2">Serving Greenwood, Mississippi</span>
+                        <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">Local Technology Support You Can Count On</h2>
+                        <p class="mt-4 text-gray-600">
+                            Proudly providing computer repair, upgrades, networking support, IT consulting, and technology solutions in Greenwood, Mississippi and surrounding areas.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Tramiel Information Tech Services</h4>
+                                <p class="text-sm text-gray-600">Greenwood, MS 38930</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Phone</h4>
+                                <a href="tel:6622993616" class="text-sm text-brand-600 font-semibold hover:underline">+1 662-299-3616</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Email</h4>
+                                <a href="mailto:ntramiel@yahoo.com" class="text-sm text-brand-600 font-semibold hover:underline">ntramiel@yahoo.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="tel:6622993616" class="flex-1 bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3.5 px-6 rounded-xl shadow-md text-center transition-all text-sm flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call Now</span>
+                        </a>
+                        <a href="#contact-form" class="flex-1 bg-white hover:bg-gray-50 text-gray-800 font-semibold py-3.5 px-6 rounded-xl border border-gray-200 text-center transition-all text-sm flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-message"></i>
+                            <span>Send a Message</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div id="contact-form" class="bg-gray-50 p-8 sm:p-10 rounded-3xl border border-gray-100 shadow-sm">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Need IT Help?</h3>
+                        <p class="text-sm text-gray-600 mt-1">Have a computer problem, need a network setup, or looking for a new computer? Tell us what you need and let's find the right solution.</p>
+                    </div>
+
+                    <form id="it-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Your Name</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 bg-white text-sm outline-none transition-all" placeholder="John Doe">
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1.5">Phone Number</label>
+                                <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 bg-white text-sm outline-none transition-all" placeholder="+1 (662) 000-0000">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1.5">Email Address</label>
+                                <input type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 bg-white text-sm outline-none transition-all" placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Service or Product Needed</label>
+                            <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 bg-white text-sm outline-none transition-all">
+                                <option>Computer Repair & Diagnostics</option>
+                                <option>Computer Upgrades (Memory/Storage)</option>
+                                <option>Home/Business Networking</option>
+                                <option>IT Consulting</option>
+                                <option>Buy Desktop / Laptop / Equipment</option>
+                                <option>General Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Tell us what you need</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 bg-white text-sm outline-none transition-all" placeholder="Describe your computer problem or what equipment you're looking for..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-4 rounded-xl shadow-lg shadow-brand-600/20 transition-all text-sm">
+                            Request Service / Shop Computers
+                        </button>
+                    </form>
+
+                    <!-- Success Message Box (Hidden by default) -->
+                    <div id="success-box" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm font-medium flex items-center space-x-3">
+                        <i class="fa-solid fa-circle-check text-emerald-600 text-lg"></i>
+                        <span>Thank you! Your message has been sent successfully. We will get back to you shortly.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white">
+                    <i class="fa-solid fa-microchip text-lg"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight block leading-tight">Tramiel Information Tech Services</span>
+                    <span class="text-xs text-gray-400">Greenwood, Mississippi • +1 662-299-3616</span>
+                </div>
+            </div>
+            <div class="text-sm text-gray-400 text-center md:text-right">
+                <p>&copy; 2026 Tramiel Information Tech Services. All rights reserved.</p>
+                <p class="mt-1">Practical Technology Solutions & Computer Repair.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu & Form Feedback -->
+    <script>
+        // Toggle mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Handle Form Submission smoothly without alert()
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('it-form');
+            const successBox = document.getElementById('success-box');
+            
+            form.reset();
+            successBox.classList.remove('hidden');
+            
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
